@@ -46,6 +46,7 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Server\Models\BaseEntity.cs" />
     <Compile Include="Server\Models\Customer.cs" />
     <Compile Include="Server\Models\Profile.cs" />
     <Compile Include="Server\Models\ProfileType.cs" />
