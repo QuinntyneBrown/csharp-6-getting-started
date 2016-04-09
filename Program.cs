@@ -14,10 +14,8 @@ namespace Chloe
             ReadLine();
         }
 
-        static void WriteEntity(dynamic entity)
-        {
-            WriteLine($"{ entity.GetType().Name } { nameof(entity.Id) }: {entity.Id}");
-        }
+        static void WriteEntity(dynamic entity) => WriteLine($"{ entity.GetType().Name } { nameof(entity.Id) }: {entity.Id}");
+
         static Customer Create() => new Customer();
     }
     
