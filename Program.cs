@@ -1,18 +1,20 @@
 ﻿using Chloe.Server.Models;
-using System;
+using static System.Console;
 
 namespace Chloe
-{
+{    
     class Program
     {
         static void Main(string[] args)
         {
-            var customer = new Customer();
+            var customer = Create();
+            
+            WriteLine($"CustomerId: {customer.Id}");
 
-            Console.WriteLine(customer.Id);
-
-            Console.ReadLine();
+            ReadLine();
         }
+
+        static Customer Create() => new Customer();
     }
     
 }
